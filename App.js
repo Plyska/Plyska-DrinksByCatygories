@@ -34,12 +34,6 @@ import AppContext from './src/AppContext';
 Icon.loadFont();
 const Stack = createStackNavigator();
 
-// fetch(
-//   `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary%20Drink`,
-// )
-//   .then((res) => res.json())
-//   .then(console.log);
-
 const App = () => {
   const [availableCategories, setAvailableCategories] = useState([]);
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -55,7 +49,6 @@ const App = () => {
           (item) => item === category || selectedCategories.includes(item),
         ),
       );
-      // setSelectedCategories([...selectedCategories, category]);
     }
   };
 
